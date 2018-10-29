@@ -267,6 +267,9 @@ header {
 
     nav {
         background-color:#720057;
+        background-image: url("../img/nav.jpg");
+        background-position: center;
+        background-size: cover;
         position: fixed;
         height: 80px;
         width: 100%;
@@ -505,6 +508,9 @@ header {
     background-color: #720057;
     padding: 100px 0px 100px 0px;
     text-align: center;
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+    background-position: center;
 
 
     .b {
@@ -763,7 +769,7 @@ header {
                 transition:.3s;
 
                 i {
-                    background-color: #ff0000;
+                    background-color: #720057;
                     width: 50px;
                     height: 50px;
                     text-align: center;
@@ -925,6 +931,19 @@ header {
 
 #reel {
     padding: 100px 0px 100px 0px;
+
+    background-image: url("../img/bg3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    h3 {
+        font-size: 28px;
+        font-weight: 800;
+        text-transform: uppercase;
+        text-align: center;
+        color: #720057
+    }
 
 
     #categories {

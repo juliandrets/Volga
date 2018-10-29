@@ -11,15 +11,8 @@ class ReelController extends Controller
     public function index()
     {
         $reel           = Reel::orderBy('id','desc')->get();
-        $commercials    = Reel::where('category', '=', 'Commecials');
-        $tv             = Reel::where('category', '=', 'TV Productions');
-        $others         = Reel::where('category', '=', 'Others');
-
         return view('reel', [
-            'reel'          => $reel,
-            'commercials'   => $commercials,
-            'tv'            => $tv,
-            'others'        => $others
+            'reel'          => $reel
         ]);
     }
 

@@ -3,7 +3,7 @@
 <?php $title = 'JustJ - Gallery'; ?>
 
 @section('content')
-    @extends('layouts.header-index')
+    @include('layouts.header-index')
 
     <section id="banner-section">
         <section class="content">

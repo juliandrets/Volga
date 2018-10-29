@@ -1,16 +1,17 @@
 @extends('layouts.default')
 
-<?php $title = 'JustJ - Reel'; ?>
+<?php $title = 'Volga - Reel'; ?>
 
 @section('content')
-    
+
+
+    @extends('layouts.header-index')
+
     <script>
         $(document).ready(function(){
             $(".inline").colorbox({inline:true, width:"50%"});
         });
     </script>
-
-    @extends('layouts.header-index')
 
     <section id="banner-section">
         <section class="content">
@@ -19,12 +20,7 @@
     </section>
 
     <section id="reel">
-        <ul id="categories">
-            <li id="all-b">All</li>
-            <li id="commercials-b">Commercials</li>
-            <li id="tv-b">TV Shows</li>
-            <li id="others-b">Others</li>
-        </ul>
+        <h3>Algunas de nuestras producciones</h3>
 
         <ul id="reel-ul">
             @foreach($reel as $reel_item)
@@ -53,69 +49,5 @@
     
 
     @include('layouts.footer')
-
-    <script>
-        $('#all-b').addClass('active')
-        $('#commercials-b').click(function(){
-            $('.commercial').fadeIn(function() {
-				$('.commercial').css('display', 'block')
-            })
-            $('.tv').fadeOut(function() {
-				$('.tv').css('display', 'none')
-            })
-            $('.other').fadeOut(function() {
-				$('.other').css('display', 'none')
-            })
-            $('#commercials-b').addClass('active')
-            $('#others-b').removeClass('active')
-            $('#all-b').removeClass('active')
-            $('#tv-b').removeClass('active')
-        });
-        $('#others-b').click(function(){
-            $('.commercial').fadeOut(function() {
-				$('.commercial').css('display', 'none')
-            })
-            $('.tv').fadeOut(function() {
-				$('.tv').css('display', 'none')
-            })
-            $('.other').fadeIn(function() {
-				$('.other').css('display', 'block')
-            })
-            $('#commercials-b').removeClass('active')
-            $('#others-b').addClass('active')
-            $('#all-b').removeClass('active')
-            $('#tv-b').removeClass('active')
-        });
-        $('#tv-b').click(function(){
-            $('.commercial').fadeOut(function() {
-				$('.commercial').css('display', 'none')
-            })
-            $('.tv').fadeIn(function() {
-				$('.tv').css('display', 'block')
-            })
-            $('.other').fadeOut(function() {
-				$('.other').css('display', 'none')
-            })
-            $('#commercials-b').removeClass('active')
-            $('#others-b').removeClass('active')
-            $('#all-b').removeClass('active')
-            $('#tv-b').addClass('active')
-        });
-        $('#all-b').click(function(){
-            $('.commercial').fadeIn(function() {
-				$('.commercial').css('display', 'block')
-            })
-            $('.tv').fadeIn(function() {
-				$('.tv').css('display', 'block')
-            })
-            $('.other').fadeIn(function() {
-				$('.other').css('display', 'block')
-            })
-            $('#commercials-b').removeClass('active')
-            $('#others-b').removeClass('active')
-            $('#all-b').addClass('active')
-            $('#tv-b').removeClass('active')
-        });
-    </script>
 
 @endsection

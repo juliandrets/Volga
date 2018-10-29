@@ -238,6 +238,9 @@ header {
   height: 80px; }
   header nav {
     background-color: #720057;
+    background-image: url("../img/nav.jpg");
+    background-position: center;
+    background-size: cover;
     position: fixed;
     height: 80px;
     width: 100%;
@@ -411,7 +414,10 @@ header {
 #recent-projects {
   background-color: #720057;
   padding: 100px 0px 100px 0px;
-  text-align: center; }
+  text-align: center;
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-position: center; }
   #recent-projects .b {
     background-color: white;
     display: inline-block;
@@ -606,7 +612,7 @@ header {
       text-align: center;
       transition: .3s; }
       #about #values ul li i {
-        background-color: #ff0000;
+        background-color: #720057;
         width: 50px;
         height: 50px;
         text-align: center;
@@ -707,7 +713,17 @@ header {
     transition: .3s; }
 
 #reel {
-  padding: 100px 0px 100px 0px; }
+  padding: 100px 0px 100px 0px;
+  background-image: url("../img/bg3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; }
+  #reel h3 {
+    font-size: 28px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    color: #720057; }
   #reel #categories {
     text-align: center; }
     #reel #categories li {

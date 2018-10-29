@@ -20,7 +20,7 @@ body {
   z-index: 999999999999999999999999999;
   width: 100%;
   height: 100%;
-  background-color: #000;
+  background-color: white;
   color: #000;
   display: flex;
   align-items: center;
@@ -46,7 +46,7 @@ body {
       max-width: 90%; } }
 
 .points-bar {
-  color: #ff0100;
+  color: #720057;
   font-size: 70px;
   text-align: center;
   letter-spacing: 3px;
@@ -139,7 +139,7 @@ h2 {
     text-decoration: none; }
   .buttons .boton {
     margin: 0px 10px 0px 10px;
-    background-color: #ff0100;
+    background-color: #720057;
     display: inline-block;
     padding: 15px 20px 15px 20px;
     color: white;
@@ -237,12 +237,13 @@ footer #footer-copy {
 header {
   height: 80px; }
   header nav {
-    background-color: white;
+    background-color: #720057;
     position: fixed;
     height: 80px;
     width: 100%;
     z-index: 99999;
-    transition: .3s; }
+    transition: .3s;
+    color: white; }
     header nav .content {
       overflow: hidden; }
       header nav .content .boton-responsive {
@@ -274,15 +275,15 @@ header {
           display: block;
           padding: 15px 0px 15px 0px; }
         header nav .content .menu-responsive li:active {
-          background-color: #ff0100;
+          background-color: #720057;
           color: white; }
       header nav .content .menu-no-responsive {
         float: right; }
         header nav .content .menu-no-responsive a {
           text-decoration: none;
-          color: black; }
+          color: white; }
         header nav .content .menu-no-responsive a:hover {
-          color: #ff0100; }
+          color: #hite; }
         header nav .content .menu-no-responsive li {
           display: inline-block;
           margin-right: 20px;
@@ -292,10 +293,10 @@ header {
           line-height: 80px;
           position: relative;
           transition: .3s;
-          color: black !important; }
+          color: white !important; }
           header nav .content .menu-no-responsive li ul {
             position: fixed;
-            background-color: black;
+            background-color: white;
             z-index: 999;
             line-height: normal;
             padding: 10px 20px 20px 20px;
@@ -304,15 +305,15 @@ header {
             box-shadow: 0px 0px 22px 1px rgba(0, 0, 0, 0.45); }
             header nav .content .menu-no-responsive li ul li {
               display: block;
-              color: white !important;
+              color: black !important;
               line-height: normal;
               padding-top: 10px;
               transition: .3s; }
             header nav .content .menu-no-responsive li ul li:hover {
-              color: #ff0100 !important;
+              color: #720057 !important;
               transition: .3s; }
         header nav .content .menu-no-responsive li:hover {
-          color: #ff0100 !important;
+          color: white !important;
           transition: .3s; }
         header nav .content .menu-no-responsive li:hover > ul {
           display: block; }
@@ -321,17 +322,16 @@ header {
             display: none; } }
       header nav .content .logo {
         float: left;
-        margin-top: 5px;
-        height: 70px;
+        margin-top: 10px;
+        height: 60px;
         transition: .3s; }
 
 .navEffect {
   height: 60px !important;
-  transition: .3s;
-  border-bottom: 1px solid #e1e1e1; }
+  transition: .3s; }
 
 .logoEffect {
-  height: 50px !important;
+  height: 40px !important;
   transition: .3s; }
 
 .menuEffect {
@@ -347,7 +347,8 @@ header {
   transition: .3s; }
 
 #banner-index {
-  background-color: #333; }
+  background-color: #333;
+  margin-top: -10px; }
 
 #banner-section {
   background-color: #333;
@@ -369,7 +370,7 @@ header {
     margin-top: 10px; }
     #who-i-am .redes li {
       display: inline-block;
-      background-color: #ff0100;
+      background-color: #720057;
       height: 30px;
       width: 30px;
       text-align: center;
@@ -408,25 +409,23 @@ header {
           text-align: justify; } }
 
 #recent-projects {
-  background-image: url("../img/proyects-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background-color: #720057;
   padding: 100px 0px 100px 0px;
   text-align: center; }
   #recent-projects .b {
-    background-color: #ff0100;
+    background-color: white;
     display: inline-block;
-    padding: 25px 40px 25px 40px;
-    color: white;
+    padding: 0px 40px 0px 40px;
+    color: #720057;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 14px;
     transition: .3s;
     margin-top: 20px; }
   #recent-projects .b:hover {
-    background-color: black;
-    transition: .3s; }
+    background-color: #720057;
+    transition: .3s;
+    color: white; }
   #recent-projects h2 {
     color: white; }
   #recent-projects .gallery {
@@ -454,7 +453,7 @@ header {
         position: absolute;
         top: 0px;
         left: 0px;
-        background-color: rgba(255, 1, 0, 0.5);
+        background-color: rgba(255, 255, 255, 0.8);
         z-index: 5;
         width: 100%;
         height: 100%;
@@ -466,17 +465,18 @@ header {
           text-align: left;
           margin-left: 40px;
           max-width: calc(90% - 40px);
-          border-top: 2px solid white;
+          border-top: 2px solid #720057;
           padding-top: 30px; }
           #recent-projects .gallery li .cn section h3 {
             text-transform: uppercase;
             font-weight: 900;
-            font-size: 25px; }
+            font-size: 25px;
+            color: #720057; }
           #recent-projects .gallery li .cn section h4 {
             font-weight: 300;
             font-size: 22px; }
           #recent-projects .gallery li .cn section .boton {
-            background-color: #ff0100;
+            background-color: #720057;
             display: inline-block;
             padding: 25px 40px 25px 40px;
             color: white;
@@ -486,8 +486,9 @@ header {
             transition: .3s;
             margin-top: 20px; }
           #recent-projects .gallery li .cn section .boton:hover {
-            background-color: black;
-            transition: .3s; }
+            background-color: white;
+            transition: .3s;
+            color: #720057; }
           @media (max-width: 1000px) {
             #recent-projects .gallery li .cn section {
               margin-left: 20px; }
@@ -530,7 +531,7 @@ header {
       #contact .info ul li i {
         min-width: 100px;
         font-size: 50px;
-        color: #ff0100;
+        color: #720057;
         text-align: center; }
       #contact .info ul li div p {
         font-weight: 300;
@@ -566,7 +567,7 @@ header {
       font-family: 'Roboto';
       font-weight: 300; }
     #contact form .boton {
-      background-color: #ff0100;
+      background-color: #720057;
       display: inline-block;
       padding: 25px 70px 25px 70px;
       color: white;
@@ -692,7 +693,7 @@ header {
   #about #certificates h2 {
     color: white; }
   #about #certificates .boton {
-    background-color: #ff0100;
+    background-color: #720057;
     display: inline-block;
     padding: 25px 40px 25px 40px;
     color: white;
@@ -706,18 +707,13 @@ header {
     transition: .3s; }
 
 #reel {
-  background-color: black;
-  background-image: url("../img/placa.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
   padding: 100px 0px 100px 0px; }
   #reel #categories {
     text-align: center; }
     #reel #categories li {
       display: inline-block;
       margin: 0px 10px 0px 10px;
-      color: white;
+      color: #720057;
       text-transform: uppercase;
       font-weight: 600;
       font-size: 20px;
@@ -725,9 +721,11 @@ header {
       box-sizing: border-box;
       cursor: pointer; }
     #reel #categories li:hover {
-      background-color: #ff0100; }
+      background-color: #720057;
+      color: white; }
     #reel #categories .active {
-      background-color: #ff0100; }
+      background-color: #720057;
+      color: white; }
   #reel #reel-ul {
     display: flex;
     flex-direction: row;
@@ -754,7 +752,7 @@ header {
           left: 0px;
           width: 100%;
           height: 100%;
-          background-color: rgba(255, 1, 0, 0.8);
+          background-color: rgba(114, 0, 87, 0.8);
           opacity: 0;
           transition: .3s;
           transform: scale(0); }
@@ -797,7 +795,7 @@ header {
       text-decoration: none; }
       #gallery #gallery-ul a li {
         position: relative;
-        background-color: #ff0100; }
+        background-color: #720057; }
         #gallery #gallery-ul a li section {
           height: 100%;
           box-sizing: border-box;
@@ -857,7 +855,7 @@ header {
         position: absolute;
         width: 100%;
         height: 100%;
-        background-color: rgba(255, 1, 0, 0.8);
+        background-color: rgba(114, 0, 87, 0.8);
         transition: .3s;
         display: flex;
         justify-content: center;
@@ -900,9 +898,9 @@ header {
       color: #333;
       text-decoration: none; }
   .pagination li:hover {
-    background-color: #ff0100;
+    background-color: #720057;
     color: white !important;
-    border-color: #ff0100; }
+    border-color: #720057; }
   .pagination li:hover a {
     color: white; }
 

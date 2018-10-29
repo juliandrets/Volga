@@ -4,11 +4,11 @@
 
 @section('content')
     
-    @extends('layouts.header-index')
+    @include('layouts.header-index')
 
     <section id="banner-section">
         <section class="content">
-            <h1>About Us</h1>
+            <h1>Sobre Nosotros</h1>
         </section>
     </section>
 

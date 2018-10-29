@@ -18,9 +18,9 @@
                 </ul>
             </div>
             <div class="contact">
-                <h3>CONTACT US</h3>
+                <h3>CONTACTO</h3>
                 <ul>
-                    <li>hello@justj.tv</li>
+                    <li>produccion@delvolga.com.ar</li>
                 </ul>
             </div>
         </div>
@@ -29,7 +29,7 @@
         <div class="content">
             <p>© 2018 VOLGA PRODUCCIONES. ALL RIGHTS RESERVED</p>
             <ul>
-                <li><a href="https://www.linkedin.com/in/julietacamarda/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/jorge-luis-sucksdorf-74a56215/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
             </ul>
         </div>
     </section>
